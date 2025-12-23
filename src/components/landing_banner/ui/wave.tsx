@@ -5,7 +5,7 @@ export default function Wave({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "bg-transparent w-screen z-10 absolute bottom-0 left-0",
+        "bg-transparent w-full z-50 absolute bottom-0 left-0",
         className
       )}
     >

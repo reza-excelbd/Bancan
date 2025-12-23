@@ -1,15 +1,27 @@
-import Image from "next/image";
-import Loading from "./loading";
 import Header from "@/components/header/header";
 import Banner from "@/components/landing_banner/banner";
+import CountryCategory from "@/components/country_category/country_category";
+import FloatingButtonComponent from "@/components/floating_button/floating_button";
+import Category from "@/components/Category/category";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen relative">
-      <Header />
-      <main className="flex-1 absolute top-0 left-0 w-full h-full -z-10">
-        <Banner />
+    <div className="">
+      <div className="flex flex-col min-h-screen relative">
+        <Header />
+        <main className="flex-1 absolute top-0 left-0 w-full h-full -z-10">
+          <Banner />
+        </main>
+      </div>
+      <main className="bg-white   z-10 h-[60%] relative">
+        <CountryCategory />
       </main>
+
+      {/* Category section rendered after everything else in normal flow */}
+      <Category className="w-full  bg-white px-14 relative   z-10" />
+
+      {/* floating button component statically positioned at the bottom middle of the screen */}
+      <FloatingButtonComponent className="fixed bottom-2 left-1/2 -translate-x-1/2 z-10 bg-dark_vermilion px-2 py-0.5  w-[388px] h-[69px] rounded-xl flex items-center justify-evenly" />
     </div>
   );
 }

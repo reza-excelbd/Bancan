@@ -2,11 +2,11 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navItemClasses =
-  "cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100";
+  "cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 font-['Oswald'] text-xl";
 
 export default function Header() {
   return (
-    <header className="relative w-full h-[180px] overflow-hidden">
+    <header className="relative w-full h-[180px] overflow-hidden ">
       {/* Red background */}
       <div className="absolute top-0 left-0 w-full h-[124px] bg-vermilion" />
 
