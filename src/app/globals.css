@@ -7,6 +7,8 @@
   --dark_vermilion: #eb1700;
   --deep_teal: #072f25;
   --welcome_yellow: #ff9924;
+  --cream: #F0E9DA;
+
 }
 
 @theme inline {
@@ -18,6 +20,7 @@
   --color-deep_teal: var(--deep_teal);
   --color-welcome_yellow: var(--welcome_yellow);
   --color-dark_vermilion: var(--dark_vermilion);
+  --color-cream: var(--cream);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,4 +39,55 @@ body {
 .text-outline {
   color: transparent;
   -webkit-text-stroke: 1px #0a0a0a;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .bg-outline-text {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 120%;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.3);
+    transform: rotate(-25deg);
+  }
+}
+
+.bg-outline-text {
+  letter-spacing: 0.15em;
+}
+
+@media (max-width: 768px) {
+  .bg-outline-text {
+    font-size: 4rem;
+    top: 40%;
+  }
 }

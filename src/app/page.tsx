@@ -3,6 +3,8 @@ import Banner from "@/components/landing_banner/banner";
 import CountryCategory from "@/components/country_category/country_category";
 import FloatingButtonComponent from "@/components/floating_button/floating_button";
 import Category from "@/components/Category/category";
+import HappyHours from "@/components/happy_hours/happy_hours";
+import SignatureFoods from "@/components/signature_foods/signature_foods";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
 
       {/* Category section rendered after everything else in normal flow */}
       <Category className="w-full  bg-white px-14 relative   z-10" />
+      <HappyHours />
+      <SignatureFoods />
 
       {/* floating button component statically positioned at the bottom middle of the screen */}
       <FloatingButtonComponent className="fixed bottom-2 left-1/2 -translate-x-1/2 z-10 bg-dark_vermilion px-2 py-0.5  w-[388px] h-[69px] rounded-xl flex items-center justify-evenly" />

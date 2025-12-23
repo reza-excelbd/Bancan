@@ -10,12 +10,12 @@ export default function CountryCategory({ className }: { className?: string }) {
   return (
     <div className={cn(className)}>
       {/* upper 2 image */}
-      <section className="flex flex-col items-center justify-between w-screen">
-        <Burger className="w-full absolute top-[10%] left-[2%]" />
-        <ChikenWings className="w-full absolute top-[10%] -right-[82%]" />
+      <section className="relative flex flex-col items-center justify-between w-full overflow-hidden">
+        <Burger className="absolute top-[10%] left-[2%]" />
+        <ChikenWings className="absolute top-[10%] right-[2%]" />
       </section>
       {/* bottom 2 country category */}
-      <section className="flex flex-col items-center justify-between w-screen px-16 py-32">
+      <section className="flex flex-col items-center justify-between w-full max-w-7xl mx-auto px-16 py-32">
         <div className="flex items-center justify-between w-full max-w-5xl mx-auto">
           <Text text="Authentic" />
           <GridImage

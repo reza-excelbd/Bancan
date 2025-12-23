@@ -9,7 +9,7 @@ import Card from "./Card/card";
 
 export default function Category({ className }: { className?: string }) {
   const cardClass =
-    "h-48 w-full bg-gray-100 rounded-2xl  flex items-center justify-between hover:bg-dark_vermilion hover:text-white hover:scale-105 transition-all duration-300";
+    "h-48 w-full bg-gray-200 rounded-2xl  flex items-center justify-between hover:bg-dark_vermilion hover:text-white hover:scale-105 transition-all duration-300";
 
   return (
     <div className={cn(className)}>

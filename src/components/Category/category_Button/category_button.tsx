@@ -27,7 +27,7 @@ export default function CategoryButton({
         alt={imageAlt}
         width={60}
         height={60}
-        className="w-10 h-10 rounded-full bg-gray-100 p-2 group-hover:bg-white flex justify-items-center"
+        className="w-10 h-10 rounded-full bg-gray-200 p-2 group-hover:bg-white flex justify-items-center"
       />
       <Text
         text={buttonText}
