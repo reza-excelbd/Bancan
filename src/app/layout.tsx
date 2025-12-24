@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={oswald.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${barlowCondensed.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${barlowCondensed.variable} antialiased `}
       >
         <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>

@@ -5,7 +5,8 @@
   --foreground: #171717;
   --vermilion: #ff462d;
   --dark_vermilion: #eb1700;
-  --deep_teal: #072f25;
+  --deep_teal: #072F25;
+  --light_teal: #00793A;
   --welcome_yellow: #ff9924;
   --cream: #F0E9DA;
 
@@ -18,6 +19,7 @@
   --font-mono: var(--font-geist-mono);
   --color-vermilion: var(--vermilion);
   --color-deep_teal: var(--deep_teal);
+  --color-light_teal: var(--light_teal);
   --color-welcome_yellow: var(--welcome_yellow);
   --color-dark_vermilion: var(--dark_vermilion);
   --color-cream: var(--cream);
@@ -41,6 +43,10 @@ body {
   -webkit-text-stroke: 1px #0a0a0a;
 }
 
+.text-outline-vermilion {
+  color: transparent;
+  -webkit-text-stroke: 1px #eb1700;
+}
 .marquee {
   overflow: hidden;
 }
@@ -48,6 +54,12 @@ body {
 .marquee-track {
   display: flex;
   gap: 2rem;
+  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
+}
+
+.marquee-track-no-gap {
+  display: flex;
   width: max-content;
   animation: marquee-scroll 60s linear infinite;
 }
@@ -65,19 +77,67 @@ body {
   }
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  
+  }
+  100% {
+    opacity: 0;
+  
+  }
+}
+
+.poster-enter-left {
+  animation: slideInFromLeft 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  z-index: 10;
+}
+
+.poster-enter-right {
+  animation: slideInFromRight 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  z-index: 10;
+}
+
+.poster-exit {
+  animation: fadeOut 2s ease-out forwards;
+  z-index: 1;
+}
+
 @layer utilities {
   .bg-outline-text {
     position: absolute;
-    top: 10%;
-    left: -10%;
+    top: 55%;
+    left: -15%;
     width: 120%;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
     white-space: nowrap;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 0, 0, 0.3);
-    transform: rotate(-25deg);
+    transform: rotate(-20deg);
   }
 }
 

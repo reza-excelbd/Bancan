@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import StarRating from "./rating";
 export default function CardImage({
   className,
   src,
@@ -23,7 +22,7 @@ export default function CardImage({
         alt={alt}
         width={width}
         height={height}
-        loading="lazy"
+        // loading="lazy"
         className="object-cover rounded-full"
       />
     </div>
