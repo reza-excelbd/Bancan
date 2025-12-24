@@ -22,7 +22,7 @@ export default function SubscriberText({
     <div
       key="start-circle"
       className={cn(
-        "border-dark_vermilion border-2 w-6 h-6 rounded-full shrink-0",
+        "border-dark_vermilion border-2 rounded-full shrink-0",
         borderClassName
       )}
     />
@@ -33,14 +33,12 @@ export default function SubscriberText({
     // Group word and circle together
     content.push(
       <div key={`word-circle-${index}`} className="flex items-center">
-        <p
-          className={cn("text-7xl text-outline font-['Oswald']", textClassName)}
-        >
+        <p className={cn("text-outline font-['Oswald']", textClassName)}>
           {word}
         </p>
         <div
           className={cn(
-            "border-dark_vermilion border-2 w-6 h-6 rounded-full shrink-0",
+            "border-dark_vermilion border-2 rounded-full shrink-0",
             borderClassName
           )}
         />

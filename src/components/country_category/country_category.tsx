@@ -8,15 +8,16 @@ import GridImage from "./ui/grid_image";
 
 export default function CountryCategory({ className }: { className?: string }) {
   return (
-    <div className={cn(className)}>
-      {/* upper 2 image */}
-      <section className="relative flex flex-col items-center justify-between w-full overflow-hidden">
-        <Burger className="absolute top-[10%] left-[2%]" />
-        <ChikenWings className="absolute top-[10%] right-[2%]" />
+    <div className={cn("relative w-full overflow-hidden", className)}>
+      {/* Background images */}
+      <section className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <Burger className="absolute top-[5%] sm:top-[8%] md:top-[20%] left-[1%] sm:left-[1.5%] md:left-[2%]" />
+        <ChikenWings className="absolute top-[5%] sm:top-[8%] md:top-[5%] right-[.5%] sm:right-[0%] md:right-[0%]" />
       </section>
-      {/* bottom 2 country category */}
-      <section className="flex flex-col items-center justify-between w-full max-w-7xl mx-auto px-16 py-32">
-        <div className="flex items-center justify-between w-full max-w-5xl mx-auto">
+
+      {/* Content section with text and grid images */}
+      <section className="relative z-10 flex flex-col items-center justify-between w-full max-w-8xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 md:py-24 lg:py-32 gap-8 sm:gap-10 md:gap-12">
+        <div className="flex items-center justify-between w-full max-w-5xl mx-auto gap-2 sm:gap-4 md:gap-6">
           <Text text="Authentic" />
           <GridImage
             imageSrc="/image/country_category/momos.png"
@@ -33,7 +34,7 @@ export default function CountryCategory({ className }: { className?: string }) {
           />
           <Text text="Cuisine" />
         </div>
-        <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
+        <div className="flex items-center justify-between w-full max-w-7xl mx-auto gap-2 sm:gap-4 md:gap-6">
           <Text text="Delicious" />
           <GridImage
             imageSrc="/image/country_category/pizza.png"

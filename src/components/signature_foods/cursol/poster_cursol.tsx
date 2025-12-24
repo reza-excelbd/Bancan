@@ -72,15 +72,19 @@ export default function PosterCursol({ className }: { className?: string }) {
   }, []);
 
   return (
-    <div className={cn("relative w-full mt-10 overflow-hidden", className)}>
+    <div
+      className={cn(
+        "relative w-full mt-6 sm:mt-8 md:mt-10 overflow-hidden",
+        className
+      )}
+    >
       {/* Carousel Content */}
-      <div className="relative z-10 container mx-auto max-w-7xl py-10 px-4">
-        <div className="grid grid-cols-2 gap-6 relative">
+      <div className="relative z-10 container mx-auto max-w-7xl py-6 sm:py-8 md:py-10 px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 relative">
           {visiblePosters.map((poster, index) => (
             <div
               key={`container-${index}`}
-              className="relative overflow-hidden"
-              style={{ minHeight: "300px" }}
+              className="relative overflow-hidden min-h-[240px] sm:min-h-[280px] md:min-h-[320px]"
             >
               {/* Previous poster (fading out) */}
               {isTransitioning && previousPosters[index] && (
@@ -95,7 +99,7 @@ export default function PosterCursol({ className }: { className?: string }) {
                     "hover:scale-105 transition-transform duration-300 ease-out "
                   )}
                   style={{
-                    minHeight: "300px",
+                    minHeight: "240px",
                   }}
                 >
                   <Image
@@ -122,7 +126,7 @@ export default function PosterCursol({ className }: { className?: string }) {
                   "hover:scale-105 transition-transform duration-300 ease-out"
                 )}
                 style={{
-                  minHeight: "300px",
+                  minHeight: "240px",
                 }}
               >
                 <Image

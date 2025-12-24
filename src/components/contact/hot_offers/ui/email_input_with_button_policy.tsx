@@ -1,20 +1,22 @@
 //email input with button policy component
 
+import { cn } from "@/lib/utils";
+
 export default function EmailInputWithButtonPolicy({
   className,
 }: {
   className?: string;
 }) {
   return (
-    <div className={className}>
+    <div className={cn("px-4 sm:px-0", className)}>
       {/* Email Input and Subscribe Button */}
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-4">
         <input
           type="email"
           placeholder="Email Address"
-          className="flex-1 px-4 py-3 rounded-lg bg-cream border-none outline-none text-foreground placeholder:text-gray-400 focus:ring-2 focus:ring-light_teal focus:ring-opacity-50 font-['Oswald']"
+          className="flex-1 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg bg-cream border-none outline-none text-foreground placeholder:text-gray-400 focus:ring-2 focus:ring-light_teal focus:ring-opacity-50 font-['Oswald'] text-sm sm:text-base"
         />
-        <button className="px-6 py-3 rounded-lg bg-light_teal text-white font-bold hover:opacity-90 transition-opacity flex items-center gap-2 whitespace-nowrap">
+        <button className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-light_teal text-white font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 whitespace-nowrap text-sm sm:text-base">
           Subscribe
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +24,7 @@ export default function EmailInputWithButtonPolicy({
             viewBox="0 0 24 24"
             strokeWidth={2.5}
             stroke="currentColor"
-            className="w-5 h-5"
+            className="w-4 h-4 sm:w-5 sm:h-5"
           >
             <path
               strokeLinecap="round"
@@ -34,15 +36,15 @@ export default function EmailInputWithButtonPolicy({
       </div>
 
       {/* Privacy Policy Checkbox */}
-      <div className="flex items-start gap-2">
+      <div className="flex items-start gap-2 px-4 sm:px-0">
         <input
           type="checkbox"
           id="privacy-policy"
-          className="mt-1 w-4 h-4 rounded border-gray-800 text-light_teal focus:ring-light_teal focus:ring-2 checked:text-light_teal"
+          className="mt-1 w-4 h-4 rounded border-gray-800 text-light_teal focus:ring-light_teal focus:ring-2 checked:text-light_teal shrink-0"
         />
         <label
           htmlFor="privacy-policy"
-          className="text-sm font-bold  cursor-pointer font-['Oswald'] tracking-wide text-gray-800"
+          className="text-xs sm:text-sm font-bold cursor-pointer font-['Oswald'] tracking-wide text-gray-800"
         >
           By signing up you agree to our Privacy Policy
         </label>

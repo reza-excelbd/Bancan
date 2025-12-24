@@ -19,14 +19,7 @@ export default function ImageShape({
   imageClassName?: string;
 }) {
   return (
-    <div
-      className={cn("overflow-hidden", className)}
-      style={{
-        aspectRatio: `${width} / ${height}`,
-        width: `${width}px`,
-        height: `${height}px`,
-      }}
-    >
+    <div className={cn("overflow-hidden", className)}>
       <Image
         src={src}
         alt={alt}

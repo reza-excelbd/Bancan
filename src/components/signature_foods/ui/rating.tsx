@@ -26,7 +26,7 @@ export default function StarRating({ className }: { className?: string }) {
             aria-hidden="true"
             viewBox="0 0 20 20"
             className={cn(
-              "w-5 h-5 fill-current transition-colors",
+              "w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5 fill-current transition-colors",
               star <= value ? "text-orange-400" : "text-gray-300"
             )}
           >

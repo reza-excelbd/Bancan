@@ -20,10 +20,10 @@ export default function TitleTextAndParagraph({
   paragraphClassName?: string;
 }) {
   return (
-    <div className={className}>
+    <div className={cn("px-4 sm:px-0", className)}>
       <h1
         className={cn(
-          "text-4xl font-bold font-['Oswald'] uppercase text-center text-black",
+          "text-2xl sm:text-3xl md:text-4xl font-bold font-['Oswald'] uppercase text-center text-black",
           titleTextClassName
         )}
       >
@@ -32,7 +32,7 @@ export default function TitleTextAndParagraph({
       </h1>
       <p
         className={cn(
-          "text-sm text-gray-500 text-center py-10",
+          "text-xs sm:text-sm text-gray-500 text-center py-6 sm:py-8 md:py-10",
           paragraphClassName
         )}
       >

@@ -12,12 +12,14 @@ export default function ContactInfo({
   address: string;
 }) {
   return (
-    <div className={cn("flex flex-col justify-between", className)}>
-      <h3 className="text-white text-sm font-semibold font-['Oswald']">
+    <div
+      className={cn("flex flex-col justify-between gap-2 sm:gap-3", className)}
+    >
+      <h3 className="text-white text-xs sm:text-sm font-semibold font-['Oswald']">
         Phone:{" "}
         <span>{phoneNumbers.map((phone) => phone.number).join(", ")}</span>
       </h3>
-      <address className="text-white text-sm  not-italic font-['Oswald'] font-semibold">
+      <address className="text-white text-xs sm:text-sm not-italic font-['Oswald'] font-semibold">
         Address: {address}
       </address>
     </div>

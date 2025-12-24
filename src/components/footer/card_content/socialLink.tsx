@@ -21,7 +21,7 @@ export default function SocialLink({
         <Link
           href={link.href}
           key={link.href}
-          className="text-white text-sm not-italic font-['Oswald'] font-semibold hover:text-black transition-all duration-300 p-3 rounded-full border border-white"
+          className="text-white text-sm not-italic font-['Oswald'] font-semibold hover:text-black transition-all duration-300 p-2 sm:p-2.5 md:p-3 rounded-full border border-white"
         >
           {link.icon}
         </Link>

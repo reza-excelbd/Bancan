@@ -16,7 +16,7 @@ export default function CategoryImage({
 }) {
   return (
     <div className={cn(className)}>
-      <Image src={src} alt={alt} width={width} height={height} loading="lazy" />
+      <Image src={src} alt={alt} width={width} height={height} priority />
     </div>
   );
 }

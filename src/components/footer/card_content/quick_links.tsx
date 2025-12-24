@@ -18,15 +18,17 @@ export default function QuickLinks({
       )}
     >
       {links.map((link, index) => (
-        <div key={link.text} className="flex items-center">
+        <div key={`${link.text}-${index}`} className="flex items-center">
           <Link
             href={link.href}
-            className="text-white text-sm not-italic font-['Oswald'] font-semibold hover:text-black transition-all duration-300"
+            className="text-white text-xs sm:text-sm not-italic font-['Oswald'] font-semibold hover:text-black transition-all duration-300"
           >
             {link.text}
           </Link>
           {index < links.length - 1 && (
-            <span className="text-white text-sm font-['Oswald'] mx-2">-</span>
+            <span className="text-white text-xs sm:text-sm font-['Oswald'] mx-1 sm:mx-2">
+              -
+            </span>
           )}
         </div>
       ))}

@@ -7,31 +7,31 @@ import { cn } from "@/lib/utils";
 
 export default function HotOffers({ className }: { className?: string }) {
   return (
-    <div className={cn("relative", className)}>
-      <section className="absolute inset-0 overflow-hidden min-h-[400px]">
+    <div className={cn("relative px-4 sm:px-6 md:px-8", className)}>
+      <section className="absolute inset-0 overflow-hidden min-h-[300px] sm:min-h-[350px] md:min-h-[400px]">
         <Image
           src="/image/signature_food/chiken.png"
           alt="hot offers"
           width={250}
           height={250}
-          className="object-cover absolute top-0 left-0"
+          className="object-cover absolute top-0 left-0 w-[120px] h-auto sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[250px] opacity-60 sm:opacity-80 md:opacity-100"
         />
         <Image
           src="/image/signature_food/momos.png"
           alt="hot offers"
           width={250}
           height={250}
-          className="object-cover absolute bottom-0 right-0"
+          className="object-cover absolute bottom-0 right-0 w-[120px] h-auto sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[250px] opacity-60 sm:opacity-80 md:opacity-100"
         />
       </section>
-      <section className="flex flex-col items-center justify-between max-w-xl mx-auto">
+      <section className="flex flex-col items-center justify-between max-w-xl mx-auto relative z-10 pt-8 sm:pt-12 md:pt-16">
         <div className="relative w-full">
           <Image
             src="/image/contact/chilly.png"
             alt="chilly"
             width={300}
             height={300}
-            className="object-cover absolute -top-[60%] right-[-10%] z-0 -rotate-25"
+            className="object-cover absolute -top-[40%] sm:-top-[50%] md:-top-[60%] right-[-5%] sm:right-[-8%] md:right-[-10%] z-0 -rotate-25 w-[150px] h-auto sm:w-[200px] md:w-[250px] lg:w-[300px] opacity-50 sm:opacity-70 md:opacity-100"
           />
           <TitleTextAndParagraph
             firstTitleText="Hot Offers"
