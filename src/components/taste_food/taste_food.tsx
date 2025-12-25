@@ -10,7 +10,7 @@ export default function TasteFood({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]",
+        "relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden",
         className
       )}
     >

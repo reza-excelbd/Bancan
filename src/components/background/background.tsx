@@ -24,7 +24,7 @@ export default function Background({
             alt="left arrow"
             width={200}
             height={200}
-            className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] opacity-40 sm:opacity-50 md:opacity-60 lg:opacity-70"
+            className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] opacity-40 sm:opacity-50 md:opacity-60 lg:opacity-70 background-float-1"
           />
         </div>
 
@@ -35,7 +35,7 @@ export default function Background({
             alt="right arrow"
             width={200}
             height={200}
-            className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] opacity-40 sm:opacity-50 md:opacity-60 lg:opacity-70"
+            className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] opacity-40 sm:opacity-50 md:opacity-60 lg:opacity-70 background-float-2"
           />
         </div>
 
@@ -46,7 +46,7 @@ export default function Background({
             alt="burger"
             width={200}
             height={200}
-            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50"
+            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50 background-float-3"
           />
         </div>
 
@@ -57,7 +57,7 @@ export default function Background({
             alt="chicken wings"
             width={200}
             height={200}
-            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50"
+            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50 background-float-4"
           />
         </div>
 
@@ -68,7 +68,7 @@ export default function Background({
             alt="pizza and momos"
             width={200}
             height={200}
-            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50"
+            className="w-[100px] h-auto sm:w-[130px] md:w-[160px] lg:w-[180px] xl:w-[200px] opacity-30 sm:opacity-40 md:opacity-50 background-float-5"
           />
         </div>
       </div>

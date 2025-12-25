@@ -7,7 +7,7 @@ export default function Background({ className }: { className?: string }) {
   return (
     <div className={cn(className)}>
       {/* Upper left image */}
-      <div className="absolute top-0 left-0 -translate-x-[20%] -translate-y-[15%]">
+      <div className="absolute top-10 left-0 -translate-x-[20%] -translate-y-[15%]">
         <Image
           src="/image/taste_food/image.png"
           alt="taste food"
@@ -18,7 +18,7 @@ export default function Background({ className }: { className?: string }) {
       </div>
 
       {/* Upper right image */}
-      <div className="absolute top-0 right-0 translate-x-[10%] -translate-y-[10%]">
+      <div className="absolute top-10 right-10 translate-x-[10%] -translate-y-[10%]">
         <Image
           src="/image/taste_food/leaf.png"
           alt="leaf"

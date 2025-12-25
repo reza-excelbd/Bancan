@@ -439,6 +439,107 @@ a {
   }
 }
 
+/* Background Image Animations - Different timings and directions */
+.background-float-1 {
+  animation: background-float-1 10s ease-in-out infinite;
+}
+
+.background-float-2 {
+  animation: background-float-2 14s ease-in-out infinite;
+}
+
+.background-float-3 {
+  animation: background-float-3 12s ease-in-out infinite;
+}
+
+.background-float-4 {
+  animation: background-float-4 16s ease-in-out infinite;
+}
+
+.background-float-5 {
+  animation: background-float-5 18s ease-in-out infinite;
+}
+
+/* Left Arrow - Vertical dominant, slower */
+@keyframes background-float-1 {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-25px) translateX(5px);
+  }
+  50% {
+    transform: translateY(-35px) translateX(0px);
+  }
+  75% {
+    transform: translateY(-25px) translateX(-5px);
+  }
+}
+
+/* Right Arrow - Horizontal dominant, medium speed */
+@keyframes background-float-2 {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-10px) translateX(15px);
+  }
+  50% {
+    transform: translateY(-15px) translateX(20px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(10px);
+  }
+}
+
+/* Burger - Circular pattern, medium speed */
+@keyframes background-float-3 {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(12px);
+  }
+  50% {
+    transform: translateY(-25px) translateX(0px);
+  }
+  75% {
+    transform: translateY(-20px) translateX(-12px);
+  }
+}
+
+/* Chicken Wings - Diagonal pattern, slower */
+@keyframes background-float-4 {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-18px) translateX(-8px);
+  }
+  50% {
+    transform: translateY(-28px) translateX(-15px);
+  }
+  75% {
+    transform: translateY(-18px) translateX(-8px);
+  }
+}
+
+/* Pizza and Momos - Wide horizontal, slowest */
+@keyframes background-float-5 {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-12px) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-18px);
+  }
+  75% {
+    transform: translateY(-12px) translateX(-10px);
+  }
+}
+
 .button-hover-animation {
   transition: all 0.3s ease-in-out;
 }
