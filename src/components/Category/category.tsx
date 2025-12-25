@@ -21,6 +21,7 @@ export default function Category({ className }: { className?: string }) {
         />
         <Button
           buttonText="See More"
+          href="/menu"
           className="bg-dark_vermilion text-white px-3 sm:px-4 py-2 sm:py-2 md:py-2 rounded-md font-['Oswald'] text-base sm:text-lg md:text-xl cursor-pointer font-bold button-hover-animation"
         />
       </section>

@@ -16,7 +16,7 @@ export default function LeftSideImages({ className }: { className?: string }) {
         alt="trow masala"
         width={412}
         height={555}
-        className="w-full sm:w-[180px] md:w-[220px] lg:w-[280px] xl:w-[330px] 2xl:w-[412px] h-auto object-cover rounded-xl sm:rounded-2xl"
+        className="w-full sm:w-[180px] md:w-[220px] lg:w-[280px] xl:w-[330px] 2xl:w-[412px] h-auto object-cover rounded-xl sm:rounded-2xl taste-food-float"
         style={{ aspectRatio: "412/555" }}
       />
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-3">
@@ -26,7 +26,7 @@ export default function LeftSideImages({ className }: { className?: string }) {
           alt="logo indian food"
           width={180}
           height={180}
-          className="w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-auto aspect-square object-cover rounded-xl sm:rounded-2xl"
+          className="w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-auto aspect-square object-cover rounded-xl sm:rounded-2xl taste-food-float-slow taste-food-rotate"
         />
         {/* image 2 */}
         <Image
@@ -34,7 +34,7 @@ export default function LeftSideImages({ className }: { className?: string }) {
           alt="arrange food"
           width={240}
           height={360}
-          className="w-[140px] sm:w-[160px] md:w-[190px] lg:w-[220px] xl:w-[240px] h-auto object-cover rounded-xl sm:rounded-2xl"
+          className="w-[140px] sm:w-[160px] md:w-[190px] lg:w-[220px] xl:w-[240px] h-auto object-cover rounded-xl sm:rounded-2xl taste-food-float-slow"
           style={{ aspectRatio: "240/360" }}
         />
       </div>

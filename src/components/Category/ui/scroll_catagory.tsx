@@ -3,14 +3,16 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function Button({
+export default function ScrollCategory({
   className,
   buttonText,
   href,
+  onClick,
 }: {
   className?: string;
   buttonText: string;
   href?: string;
+  onClick?: () => void;
 }) {
   const buttonClasses = cn(
     className,
@@ -25,5 +27,9 @@ export default function Button({
     );
   }
 
-  return <button className={buttonClasses}>{buttonText}</button>;
+  return (
+    <button className={buttonClasses} onClick={onClick}>
+      {buttonText}
+    </button>
+  );
 }

@@ -9,6 +9,7 @@
   --light_teal: #00793A;
   --welcome_yellow: #ff9924;
   --cream: #F0E9DA;
+  --dark_cream: #F0E9DA;
 
 }
 
@@ -23,6 +24,7 @@
   --color-welcome_yellow: var(--welcome_yellow);
   --color-dark_vermilion: var(--dark_vermilion);
   --color-cream: var(--cream);
+  --color-dark_cream: var(--dark_cream);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -162,6 +164,21 @@ a {
     transform: rotate(-20deg);
   }
 }
+@layer utilities {
+  .bg-outline-text-about {
+    position: absolute;
+    top: 55%;
+    left: -10%;
+    width: 120%;
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.2);
+    transform: rotate(-15deg);
+  }
+}
 
 .bg-outline-text {
   letter-spacing: 0.15em;
@@ -169,6 +186,16 @@ a {
 
 @media (max-width: 768px) {
   .bg-outline-text {
+    font-size: 4rem;
+    top: 40%;
+  }
+}
+.bg-outline-text-about {
+  letter-spacing: 0.15em;
+}
+
+@media (max-width: 768px) {
+  .bg-outline-text-about {
     font-size: 4rem;
     top: 40%;
   }
@@ -382,6 +409,35 @@ a {
     transform: translateY(-20px);
   }
 }
+.taste-food-float-slow {
+  animation: taste-food-float 5s ease-in-out infinite;
+}
+
+.taste-food-float {
+  animation: taste-food-float 3s ease-in-out infinite;
+}
+
+@keyframes taste-food-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.taste-food-rotate {
+  animation: taste-food-rotate 8s linear infinite;
+}
+
+@keyframes taste-food-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .button-hover-animation {
   transition: all 0.3s ease-in-out;
@@ -390,4 +446,89 @@ a {
 .button-hover-animation:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(235, 23, 0, 0.5);
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* React Slick Custom Styles */
+.slick-slider {
+  position: relative;
+}
+
+.slick-list {
+  margin: 0 -6px;
+  overflow: visible;
+}
+
+.slick-slide > div {
+  padding: 0 6px;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #666;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--dark_vermilion);
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: var(--dark_vermilion);
+  opacity: 0.75;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
 }

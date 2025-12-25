@@ -13,9 +13,9 @@ export default function Banner({
 }) {
   return (
     <div className={cn("relative w-full", className)}>
-      <div className="relative w-full h-full bg-deep_teal overflow-hidden min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center px-4 sm:px-6 md:px-8">
+      <div className="relative w-full h-full bg-deep_teal overflow-hidden min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[400px] flex items-center justify-center px-4 sm:px-6 md:px-8">
         {/* MENU Text */}
-        <div className="relative z-10 flex items-center justify-center">
+        <div className="relative z-10 flex items-center justify-center mt-48 sm:mt-5 md:mt-32 lg:mt-48 xl:mt-52">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold font-['Oswald'] text-white uppercase tracking-wide text-center">
             {title}
           </h1>
