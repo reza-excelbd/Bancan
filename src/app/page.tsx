@@ -8,6 +8,7 @@ import SignatureFoods from "@/components/signature_foods/signature_foods";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 import FloatingButtonComponent from "@/components/floating_button/floating_button";
+import TasteFood from "@/components/taste_food/taste_food";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Category className="w-full bg-white px-4 sm:px-8 md:px-10 lg:px-14 relative z-10" />
       <HappyHours />
       <SignatureFoods className="bg-white" />
+      <TasteFood className="bg-white" />
       <Contact className="bg-white" />
       <Footer className="w-full" />
 

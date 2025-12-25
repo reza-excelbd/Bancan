@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Oswald, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
+import CustomCursor from "./custom_cursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${barlowCondensed.variable} antialiased `}
       >
+        <CustomCursor />
         <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>
     </html>

@@ -23,7 +23,7 @@ export default function TitleTextAndParagraph({
     <div className={cn("px-4 sm:px-0", className)}>
       <h1
         className={cn(
-          "text-2xl sm:text-3xl md:text-4xl font-bold font-['Oswald'] uppercase text-center text-black",
+          "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-['Oswald'] uppercase text-center text-black",
           titleTextClassName
         )}
       >

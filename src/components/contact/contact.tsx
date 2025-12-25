@@ -13,7 +13,7 @@ export default function Contact({ className }: { className?: string }) {
         titleTextBlack="Connect with "
         titleTextRed="Us"
         paragraph='The concept of "quick food" actually dates back to ancient civilizations, where street vendors and food stalls offered simple,'
-        titleTextClassName="text-2xl sm:text-3xl md:text-4xl font-bold font-['Oswald'] uppercase text-black text-center"
+        titleTextClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-['Oswald'] uppercase text-black text-center"
         paragraphClassName="text-xs sm:text-sm text-gray-500 text-center max-w-xl mx-auto py-3 sm:py-4 md:py-5 font-['Oswald'] px-4"
       />
       {/* 
@@ -66,7 +66,7 @@ export default function Contact({ className }: { className?: string }) {
         textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-outline-vermilion font-['Oswald'] uppercase tracking-wide"
         borderClassName="border-dark_vermilion border-2 rounded-full w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
       />
-      <HotOffers className="pb-16 sm:pb-24 md:pb-32" />
+      <HotOffers className="pb-16 sm:pb-24 md:pb-32 " />
     </div>
   );
 }
