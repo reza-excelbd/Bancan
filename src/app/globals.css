@@ -10,6 +10,7 @@
   --welcome_yellow: #ff9924;
   --cream: #F0E9DA;
   --dark_cream: #F0E9DA;
+  --rose_pink: #E9004B;
 
 }
 
@@ -25,6 +26,7 @@
   --color-dark_vermilion: var(--dark_vermilion);
   --color-cream: var(--cream);
   --color-dark_cream: var(--dark_cream);
+  --color-rose_pink: var(--rose_pink);
 }
 
 @media (prefers-color-scheme: dark) {

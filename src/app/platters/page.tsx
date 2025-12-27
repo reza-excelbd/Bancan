@@ -4,6 +4,9 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Banner from "@/components/shared/banner/banner";
 import Background from "@/components/background/background";
+import DeliciousCardParent from "@/components/platers/deliciousCardParent";
+import BuffetParent from "@/components/platers/buffetParent";
+import PosterWithText from "@/components/platers/posterwithText";
 
 export default function PlattersPage() {
   return (
@@ -19,7 +22,13 @@ export default function PlattersPage() {
         </main>
 
         {/* Our Categories Section */}
-        <section className="bg-white w-full relative z-10"></section>
+        <section className="bg-transparent w-full relative z-10 sm:py-10 md:py-0">
+          {/*  */}
+          {/* card view section */}
+          <DeliciousCardParent />
+          <BuffetParent />
+          <PosterWithText />
+        </section>
 
         <Footer />
       </div>

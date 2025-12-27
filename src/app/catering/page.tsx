@@ -4,6 +4,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Banner from "@/components/shared/banner/banner";
 import Background from "@/components/background/background";
+import CateringParent from "@/components/catering/cataring_parent";
 
 export default function CateringPage() {
   return (
@@ -18,8 +19,10 @@ export default function CateringPage() {
           />
         </main>
 
-        {/* Our Categories Section */}
-        <section className="bg-white w-full relative z-10"></section>
+        {/* Catering Sections */}
+        <section className="bg-transparent w-full relative z-10 py-8 sm:py-12 md:py-16">
+          <CateringParent />
+        </section>
 
         <Footer />
       </div>

@@ -21,7 +21,7 @@ export default function AboutUsPage() {
         </main>
 
         {/* Our Content Section */}
-        <section className="bg-white w-full relative z-10">
+        <section className="bg-transparent w-full relative z-10">
           <section className="py-10">
             <BannerText />
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-center font-['Oswald'] py-6 sm:py-8 md:py-10 text-black px-4">

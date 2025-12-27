@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Oswald, Barlow_Condensed } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Oswald,
+  Barlow_Condensed,
+  Quicksand,
+} from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
@@ -13,6 +19,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
 });
 
 const oswald = Oswald({
@@ -40,7 +52,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={oswald.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${barlowCondensed.variable} antialiased `}
+        // suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${barlowCondensed.variable} ${quicksand.variable} antialiased `}
       >
         <CustomCursor />
         <Suspense fallback={<Loading />}>{children}</Suspense>

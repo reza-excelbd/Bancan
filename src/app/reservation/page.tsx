@@ -20,7 +20,7 @@ export default function ReservationPage() {
         </main>
 
         {/* Our Categories Section */}
-        <section className="bg-white w-full relative z-10">
+        <section className="bg-transparent w-full relative z-10">
           <BannerForm
             onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
               e.preventDefault();
@@ -29,6 +29,7 @@ export default function ReservationPage() {
               //auto refresh off
             }}
           />
+          
         </section>
 
         <Footer />

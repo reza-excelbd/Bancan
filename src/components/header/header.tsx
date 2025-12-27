@@ -55,7 +55,7 @@ export default function Header() {
               src="/bancan_kitchen.svg"
               alt="Bancan Kitchen"
               width={159}
-              height={46}
+              height={159}
               className="w-[130px] h-auto sm:w-[145px] md:w-[159px]"
             />
           </Link>
