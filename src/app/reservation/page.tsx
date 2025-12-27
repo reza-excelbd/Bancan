@@ -1,9 +1,10 @@
 //menu page
-
+"use client";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Banner from "@/components/shared/banner/banner";
 import Background from "@/components/background/background";
+import BannerForm from "@/components/reservation/BannerFrom";
 
 export default function ReservationPage() {
   return (
@@ -19,7 +20,16 @@ export default function ReservationPage() {
         </main>
 
         {/* Our Categories Section */}
-        <section className="bg-white w-full relative z-10"></section>
+        <section className="bg-white w-full relative z-10">
+          <BannerForm
+            onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+              e.preventDefault();
+              console.log("submitted");
+              console.log(e);
+              //auto refresh off
+            }}
+          />
+        </section>
 
         <Footer />
       </div>

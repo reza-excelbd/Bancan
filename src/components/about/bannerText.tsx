@@ -12,8 +12,8 @@ export default function BannerText({ className }: { className?: string }) {
         <Image
           src="/image/about/about_banner.png"
           alt="banner"
-          width={880}
-          height={880}
+          width={980}
+          height={980}
           className="object-cover aspect-square rounded-r-2xl"
         />
       </section>

@@ -175,13 +175,15 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
     color: transparent;
+    font-family: 'Oswald', sans-serif;
+    /* letter-spacing: -0.1rem; */
     -webkit-text-stroke: 1px rgba(255, 0, 0, 0.2);
     transform: rotate(-15deg);
   }
 }
 
 .bg-outline-text {
-  letter-spacing: 0.15em;
+  letter-spacing: -0.05em;
 }
 
 @media (max-width: 768px) {
@@ -191,7 +193,7 @@ a {
   }
 }
 .bg-outline-text-about {
-  letter-spacing: 0.15em;
+  letter-spacing: -0.05em;
 }
 
 @media (max-width: 768px) {

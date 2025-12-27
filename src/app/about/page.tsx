@@ -22,7 +22,7 @@ export default function AboutUsPage() {
 
         {/* Our Content Section */}
         <section className="bg-white w-full relative z-10">
-          <section className="">
+          <section className="py-10">
             <BannerText />
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-center font-['Oswald'] py-6 sm:py-8 md:py-10 text-black px-4">
               Delights Of Our <span className="text-dark_vermilion">Taste</span>
@@ -123,7 +123,7 @@ export default function AboutUsPage() {
           </section>
           {/* Background Outline Text */}
           <div className="absolute inset-0 pointer-events-none marquee-track">
-            <h1 className="bg-outline-text-about marquee-item">
+            <h1 className="bg-outline-text-about font-['Oswald'] tracking-tight ">
               YOUR WILL REMEMBER THIS WITH A INDIAN TASTE <br /> THIS YOUR WILL
               REMEMBER THIS WITH A INDIAN TASTE
             </h1>
